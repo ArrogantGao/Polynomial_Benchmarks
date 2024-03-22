@@ -17,6 +17,7 @@ function generate_fig()
     
     parsed_args = parse_commandline()
     in_file = parsed_args["in-file"]
+    dic = dirname(in_file)
     
     df0 = CSV.read(in_file, DataFrame)
     for T0 in ["Float32", "Float64"]
@@ -26,7 +27,7 @@ function generate_fig()
         plot!(df.n, log10.(df.ht), label = "Horner", marker = :square)
         plot!(df.n, log10.(df.pt), label = "Polynomials.jl", marker = :diamond)
 
-        savefig("estrin_vs_horner_vs_polynomial_$T0.png")
+        savefig(joinpath(dic, "estrin_vs_horner_vs_polynomial_$T0.png"))
     end
 
     nothing
