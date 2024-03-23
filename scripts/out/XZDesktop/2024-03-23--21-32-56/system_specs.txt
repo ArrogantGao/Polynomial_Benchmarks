@@ -44,8 +44,8 @@ Memory block size:       128M
 Total online memory:      32G
 Total offline memory:      0B
                total        used        free      shared  buff/cache   available
-Mem:            31Gi        12Gi       8.5Gi       192Mi       9.8Gi        17Gi
-Swap:          2.0Gi          0B       2.0Gi
+Mem:            31Gi        10Gi        18Gi        61Mi       2.6Gi        20Gi
+Swap:          2.0Gi       1.8Gi       230Mi
 Distributor ID:	Ubuntu
 Description:	Ubuntu 22.04.4 LTS
 Release:	22.04
